@@ -1,29 +1,13 @@
 import * as React from "react";
-import { Link } from "gatsby";
-import { container, navLinks, navLinkItem, navLinkText, heading } from "./layout.module.css"
-
-const navbarLinks = [
-  { path: "/", title: "Home" },
-  { path: "/about", title: "About" }
-];
+import { container, heading } from "./layout.module.css";
+import Navbar from "../Navbar";
 
 const Layout = ({ pageTitle, children }) => {
   return (
     <div className={container}>
       <title>{pageTitle}</title>
       <nav>
-        <ul className={navLinks}>
-          {
-            navbarLinks.map(({ path, title }) => (
-              <li className={navLinkItem} key={path}>
-                <Link to={path} className={navLinkText}>
-                  {title}
-                </Link>
-              </li>
-              )
-            )
-          }
-        </ul>
+        <Navbar></Navbar>
       </nav>
       <main>
         <h1 className={heading}>{pageTitle}</h1>
