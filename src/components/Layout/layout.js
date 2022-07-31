@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { container, navLinks, navLinkItem, navLinkText, heading } from "../components/layout.module.css"
+import { container, navLinks, navLinkItem, navLinkText, heading } from "./layout.module.css"
 
 const navbarLinks = [
   { path: "/", title: "Home" },
