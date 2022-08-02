@@ -4,6 +4,7 @@ import { navLinks, navLinkItem, navLinkText } from "./navbar.module.css";
 
 const navbarLinks = [
   { path: "/", title: "Home" },
+  { path: "/blog", title: "Blog" },
   { path: "/about", title: "About" }
 ];
 
